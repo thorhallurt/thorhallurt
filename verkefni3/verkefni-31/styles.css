@@ -1,0 +1,59 @@
+body {
+
+    padding: 2em;
+
+}
+
+.col-2 {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 16px;
+    border: solid 1px;
+    padding: 8px;
+    margin: 16px;
+
+}
+
+.col-2 div {
+
+    display: flex inline-block;
+
+}
+
+.col-3 {
+
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: 100%;
+    grid-gap: 16px;
+    border: solid 1px;
+    padding: 8px;
+    margin: 16px;
+
+}
+
+.col-3 div {
+
+    display: flex inline-block;
+
+}
+
+.col-4 {
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 100%;
+    grid-gap: 16px;
+    border: solid 1px;
+    padding: 8px;
+    margin: 16px;
+
+}
+
+.col-4 div {
+
+    display: flex inline-block;
+
+}

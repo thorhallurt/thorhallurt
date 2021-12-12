@@ -1,0 +1,29 @@
+h1 { color: rgb(20, 100, 50) }
+h2 { color: rgb(50, 100, 200) }
+h3 { color: rgb(230, 195, 250) }
+h4 { color: rgb(160, 75, 50) }
+h5 { color: rgb(158, 120, 104) }
+h6 { color: rgb(70, 50, 70) }
+
+em { color: rgb(100, 100, 200)}
+strong { color: rgb(175, 50, 50)}
+
+body { font-family: "Comic Sans MS", "Comic Sans", cursive; }
+body { border: solid red 1px }
+body { margin: 0 auto }
+body { width:  50em ;}
+
+.title { color: rgb(150, 100, 100) }
+.utitle { color: rgb(175, 200, 150) }
+.paragraph { color: rgb(150, 75, 30) }
+
+.beatles { color: darkolivegreen }
+.beatles { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+.beatles { font-size: xx-large ;}
+.beatles { font-weight:700}
+
+.aDayInTheLife { color: darkslateblue }
+.aDayInTheLife { font-family:Verdana, Geneva, Tahoma, sans-serif }
+.aDayInTheLife { font-size: larger;}
+
+.hook { color: rgb(75, 75, 250) }

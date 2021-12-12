@@ -1,0 +1,125 @@
+.header {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "m m g" "t t t";
+    grid-gap: 10px;
+    grid-area: top;
+
+}
+
+.header h1 {
+
+    align-self: center;
+    text-align: center;
+    grid-area: t;
+
+}
+
+.header a {
+
+    float: right;
+    padding-right: 33%;
+    align-self: center;
+    grid-area: g;
+
+}
+
+.topmenu {
+
+    list-style: none;
+    display: flex inline;
+    text-align: center;
+    grid-area: m;
+
+}
+
+.topmenu li {
+
+    padding-right: 25%;
+
+}
+
+.main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "a a" "d d" "b c";
+    border: solid 1px;
+ 
+}
+
+.art1 {
+
+    grid-area: a;
+    /*border-right: 1px solid;*/
+    padding: 1em;
+
+}
+
+.as1 {
+
+    grid-area: b;
+
+}
+
+.as2 {
+
+    grid-area: c;
+    border-left: 1px solid;
+    padding: 1em;
+
+}
+
+.art2 {
+
+    grid-area: d;
+    border-bottom: 1px solid;
+
+}
+
+@media screen and (min-width:37.5em) {
+
+    .main {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "b a" "d c";
+
+    }
+
+    .art1 {
+
+        border-left: 1px solid;
+
+    }
+
+    .art2 {
+
+        border-bottom: none;
+
+    }
+
+}
+
+@media screen and (min-width:48em) {
+
+    .main {
+
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "a b c" "a d c";
+
+    }
+
+    .art1 {
+
+        border-bottom: none;
+        border-right: 1px solid;
+        border-left: none;
+
+    }
+
+}

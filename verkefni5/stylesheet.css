@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.fixedTop {
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: xx-large;
+    color: black;
+
+}
+
+.all {
+
+    display: grid;
+    grid-template-rows: 0.75fr 0.5fr 2.5fr 15fr 3fr;
+    grid-template-columns: auto;
+    grid-template-areas: "h" "n" "t" "m" "f";
+    background-image: linear-gradient(blue, rgb(100, 100, 255), blue, rgb(150, 150, 255), blue);
+    font-family: 'Comic Neue', cursive;
+
+}
+
+header {
+
+    grid-area: h;
+    background-image: linear-gradient(blue, lightskyblue);
+
+}
+
+header h1 {
+
+     color: lightgray; 
+     font-family: 'Dancing Script', cursive;
+     font-size: 700;
+
+    }
+header p { color: darkgray; }
+header a { color: black; }
+
+.navigation {
+
+    grid-area: n;
+    background-image: linear-gradient(yellow, orange, yellow);
+
+}
+
+.text {
+
+    grid-area: t;
+    background-image: linear-gradient(yellow, lightpink);
+
+}
+
+.main {
+
+    grid-area: m;
+    background-image: linear-gradient(lightpink, pink, lightgreen, lime, yellow, orange, lightblue);
+
+}
+
+footer {
+
+    grid-area: f;
+    background-image: linear-gradient(lightskyblue, lightblue, lightskyblue, blue);
+
+}
+
+.laekme { grid-area: la; }
+.oskime { grid-area: os; }
+.adamme { grid-area: ad; }
+.alname { grid-area: al; }
+.jolame { grid-area: jo; }
+.gefome { grid-area: ge; }
+
+.innermenu {
+
+    display: inline grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "la os ad" "al jo ge";
+    grid-gap: 5px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.innermenu a {
+
+    background-color: rgb(75, 75, 255);
+    text-align: center;
+    align-items: center;
+    color: lightgray;
+
+}
+
+.absolutelist li { color: lightgray; }
+.absolutelist a { color: lightgray; }
+.copy { color: lightgray; }
+
+.tenglar { grid-area: te; }
+.efnis { grid-area: in; }
+.staðs { grid-area: ak; }
+
+.absolutelist { grid-area: yt; }
+.relativelist { grid-area: in; }
+.dllist { grid-area: dl; }
+
+@media only screen and (min-width:37.5em) {
+
+    .main {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 8px;
+
+    }
+
+    .all {
+
+        grid-template-rows: 0.75fr 0.5fr 2fr 10fr 3fr;
+
+    }
+
+    .text {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-areas: "te in" "ak ak";
+
+    }
+
+    footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "dl in" "yt in";
+
+    }
+
+    .absolutelist li { color: black; }
+    .absolutelist a { color: black; }
+
+}
+
+@media only screen and (min-width:60em) {
+
+    .main {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .text {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "te in ak";
+
+    }
+
+    .innermenu {
+
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "la os ad al jo ge";
+        align-items: center;
+        text-align: center;
+
+    }
+
+    footer {
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "dl yt in";
+
+    }
+
+}

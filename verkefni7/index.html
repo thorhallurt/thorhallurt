@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"> 
+    <title>Verkefni 7</title>
+    <link rel="stylesheet" href="index-css.css">
+  </head>
+<body>
+
+        <header id="top">
+
+            <div class="none"></div>
+
+            <h1><strong>Verkefni 7</strong></h1>
+            <div class="nav">
+            <nav>
+
+                <a href="#loremipsumtext">Text</a>
+                <a href="#loremipsumimg" class="large">Image</a>
+                <a href="#audio">Audio</a>
+                <a href="#ytvid">Video</a>
+                <a href="#map">Map</a>
+                <a href="#info">Info</a>
+                <a href="#top">Top</a>
+
+            </nav>
+            </div>
+
+        </header>
+
+        <div class="container">
+
+        <main>
+
+            <div class="maintext" id="loremipsumtext">
+            <h2>Lorem ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></div>
+            <img src="assets/Lorem_ipsum.png" alt="lorem ipsum" id="loremipsumimg">
+            <audio controls id="audio">
+
+              <source src="assets/sound.mp3" type="audio/mpeg">
+              Your browser does not support audio
+
+            </audio>
+
+            <div class="video" id="ytvid">
+              <iframe width="288" height="162" src="https://www.youtube.com/embed/NzjU1GmKosQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </main>
+
+        <footer>
+
+          <div class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1740.3121415120258!2d-21.9048482834759!3d64.13906748359182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674cc84500001%3A0x16719bf129fa31a7!2zVMOma25pc2vDs2xpbm4!5e0!3m2!1sis!2sis!4v1639325991137!5m2!1sis!2sis" width="288" height="216" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <nav class="dllist" id="info">
+              <h4>DL listi </h4>
+              <dl><!--Description list, nafn tölvupóstur og áfangi-->
+                <dt>Nafn</dt>
+                  <dd>Þórhallur Tryggvason</dd>
+                <dt>Tölvupóstur</dt>
+                  <dd>thorhallurtr21@tskoli.is</dd>
+                <dt>Áfangi</dt>
+                  <dd>VEFÞ1VG05AU-Hát, Tölvubraut</dd>
+                <dt>Skóli</dt>
+                  <dd>Upplýsingatækniskólinn</dd>
+              </dl>
+            </nav>
+            <nav class="relative">
+              <h4>Innri tenglar <em>(relative links)</em></h4>
+                <dl><!-- inner links! hér þarf að aðlaga slóðir að eigin verkefnum -->
+                  <dt>Verkefni 1</dt>
+                    <dd><a href="../verkefni1/verkefni1-1.html">Verkefni 1</a></li></dd>
+                    <dd><a href="../verkefni1/verkefni1-2.html">Verkefni 1.2</a></li></dd>
+                  <dt>Verkefni 2</dt>
+                    <dd><a href="../verkefni2/verkefni2-4/verkefni2-1.html">Verkefni 2.1</a></li></dd>
+                    <dd><a href="../verkefni2/verkefni2-4/verkefni2-2.html">Verkefni 2.2</a></li></dd>
+                    <dd><a href="../verkefni2/verkefni2-4/verkefni2-3.html">Verkefni 2.3</a></li></dd>
+                    <dd><a href="../verkefni2/verkefni2-4/verkefni2-4.html">Verkefni 2.4</a></li></dd>
+                  <dt>Verkefni 3</dt>
+                    <dd><a href="../verkefni3/verkefni-31/index.html">Verkefni 3.1</a></li></dd>
+                    <dd><a href="../verkefni3/verkefni-32/index.html">Verkefni 3.2</a></li></dd>
+                  <dt>Verkefni 4</dt>
+                    <dd><a href="../verkefni4/verkefni-41/index.html">Verkefni 4.1</a></li></dd>
+                    <dd><a href="../verkefni4/verkefni-42/index.html">Verkefni 4.2</a></li></dd>
+                  <dt>Verkefni 5</dt>
+                    <dd><a href="../verkefni5/index.html">Verkefni 5</a></dd>
+                  <dt>Verkefni 6</dt>
+                    <dd><a href="../verkefni6/html/index.html">Verkefni 6</a></dd>
+                </dl>
+            </nav>
+            <nav class="absolute">
+              <h4>Ytri tenglar <em>(absolute links)</em></h4>
+              <ul> <!-- Absolute links "target _blank" opnar nýjan glugga í vafranum !aðeins notað þegar vísað er út úr eigin vef-->
+                <li> 
+                  <a href="https://vefgrunnur.github.io/bjargir.html" target="_blank" title="Vefgrunnur">Gagnlegar grunnslóðir</a>        
+                </li>  
+                <li>
+                  <a href="https://www.w3schools.com/css/css3_gradients.asp" target=_blank title="css_gradients">CSS Gradients</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/css/css_positioning.asp" target=_blank title="css_positioning">CSS Positioning</a>
+                </li>
+                <li>
+                    <a href="https://fonts.google.com/" traget=_blank title="Google-Fonts">Google Fonts</a> 
+                </li>
+            </nav>
+
+        </footer>
+
+    </div>
+
+</body>

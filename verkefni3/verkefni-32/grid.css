@@ -1,0 +1,76 @@
+.header {
+
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-template-rows: 100% 90%;
+    grid-gap: 10px;
+    grid-area: top;
+
+}
+
+.header h1 {
+
+    align-self: center;
+    text-align: center;
+
+}
+
+.header a {
+
+    float: left;
+    align-self: center;
+
+}
+
+.topmenu {
+
+    list-style: none;
+    display: flex inline;
+    text-align: center;
+
+}
+
+.topmenu li {
+
+    padding-left: 5em;
+
+}
+
+.main {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "a b b c" "a d d c";
+    grid-gap: 25px;
+    border: solid 1px;
+
+}
+
+.art1 {
+
+    grid-area: a;
+    border-right: 1px solid;
+    padding: 1em;
+
+}
+
+.as1 {
+
+    grid-area: b;
+
+}
+
+.as2 {
+
+    grid-area: c;
+    border-left: 1px solid;
+    padding: 1em;
+
+}
+
+.art2 {
+
+    grid-area: d;
+
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.all {
+
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 2.5fr;
+    font-family: 'Comic Neue', cursive;
+    grid-template-areas: "h" "m" "f";
+    background-image: linear-gradient(blue, rgb(100, 100, 255), blue, rgb(100, 100, 255));
+
+}
+
+header h1 {
+
+    font-family: 'Dancing Script', cursive;
+    color: red;
+    font-size: 700;
+
+}
+
+p {
+
+    color: lightgray;
+
+}
+
+h4 {
+
+    color: lightgray;
+
+}
+
+dt {
+
+    color: lightgray;
+
+}
+
+dd {
+
+    color: lightgray;
+
+}
+
+a {
+
+    color: lightgray;
+
+}
+
+li {
+
+    color: lightgray;
+
+}
+
+main p {
+
+    color: black;
+
+}
+
+main h4 {
+
+    color: black;
+
+}
+
+header {
+
+    grid-area: h;
+
+}
+
+main {
+
+    grid-area: m;
+    background-image: linear-gradient(yellow, orange);
+
+}
+
+footer {
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+    grid-area: f;
+
+}
+
+footer .relative {
+
+    display: flex;
+    grid-area: r;
+
+}
+
+footer .relative h4 {
+
+    display: flex inline;
+    height: min-content;
+
+}
+
+footer .absolute {
+
+    display: flex;
+    grid-area: a;
+
+}
+
+footer .dllist {
+
+    display: flex;
+    grid-area: d;
+
+}
+
+footer .dlllist dl {
+
+    margin: 1em;
+
+}
+
+@media only screen and (min-width:37.5em) {
+
+    footer {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        grid-template-areas: "r a" "d d";
+
+    }
+
+    .all {
+
+        grid-template-rows: 0.5fr 1fr 2fr;
+
+    }
+
+}
+
+@media only screen and (min-width:60em) {
+
+    .all {
+
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0.5fr 3fr;
+        grid-template-areas: "h h" "m f";
+
+    }
+
+}

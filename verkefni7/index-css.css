@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+body {
+
+    background-color: blue;
+
+}
+
+header { /* Landing page | with max height | contains title and nav */
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: -10em;
+    background-image: linear-gradient(blue, orange, blue); /* background gradient */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: "empty" "title" "nav";
+    align-self: start;
+
+}
+
+header h1 { /* title | pos center */
+
+    color: whitesmoke;
+    grid-area: title;
+    align-self: center;
+    text-align: center;
+    text-decoration: aquamarine underline 2px;
+    font-family: 'Merienda', cursive;
+    font-size: xx-large;
+    font-weight: 700;
+
+}
+
+header .nav { /* nav | scroll down */
+
+    grid-area: nav;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    background-image: linear-gradient(lime, yellow);
+
+}
+
+header .nav a {
+
+    background-color: silver;
+    color: black;
+
+}
+
+.none {
+
+    grid-area: empty;
+    display: none;
+
+}
+
+main img {
+
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+
+}
+
+main {
+
+    background-image: linear-gradient(lightblue, aquamarine, aqua, yellow, pink, aqua, aquamarine, lightblue);
+
+}
+
+main p { font-family: 'Times New Roman', Times, serif; }
+
+main h2 { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+footer {
+
+    background-image: linear-gradient(lightblue, aquamarine, aqua, aquamarine, lightblue );
+
+}
+
+footer h4 { font-family: fantasy; }
+
+footer dt { font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+footer li { font-family: monospace; }
+
+footer dd { font-family: 'Source Sans Pro', sans-serif; }
+
+main .maintext { grid-area: txt; }
+main img { grid-area: img; }
+main audio { grid-area: aud; }
+main .video { grid-area: vid; }
+
+footer .map { grid-area: map; }
+footer .dllist { grid-area: dll; }
+footer .relative { grid-area: rel; }
+footer .absolute { grid-area: abs; }
+
+.large { display: none; }
+
+@media only screen and (min-width:37.5em) {
+
+.container {
+
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 1fr 1fr;
+
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "txt img" "aud vid";
+
+}
+
+footer {
+
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1.4fr 0.4fr 0.8fr;
+    grid-template-areas: "rel dll" "rel map" "abs map";
+
+}
+
+header {
+
+    grid-template-rows: 0.8fr 1fr 0.2fr;
+
+}
+
+.large { display: inline; }
+
+}
+
+@media only screen and (min-width:48em) {
+
+main {
+
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-columns: 0.9fr 1.1fr;
+
+}
+
+main .video iframe {
+
+    width: 400px;
+    height: 300px;
+
+}
+
+.container {
+
+    grid-template-rows: 1fr 0.8fr;
+
+}
+
+footer .map iframe {
+
+    width: 384px;
+    height: 216px;;
+
+}
+
+}
+
+@media only screen and (min-width:64em) {
+
+    footer .map iframe {
+
+        width: 496px;
+        height: 279px;
+
+    }
+
+}
+
+@media only screen and (min-width:80em) {
+
+    main {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.9fr 0.1fr;
+        grid-template-areas: "txt img vid" "aud img vid";
+
+    }
+
+    footer {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 0.5fr;
+        grid-template-areas: "rel dll map" "rel abs map"
+
+    }
+
+}
+
+@media only screen and (min-width:110em) {
+
+    main .video iframe {
+
+        width: 540px;
+        height: 405px;
+
+    }
+
+    footer .map iframe {
+
+        width: 592px;
+        height: 333px;
+
+    }
+
+}

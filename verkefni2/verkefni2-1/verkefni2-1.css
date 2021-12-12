@@ -1,0 +1,31 @@
+.title0 { 
+
+    border: solid green;
+    
+}
+
+
+.title1 { 
+    
+    border: solid green;
+    color: red;
+    margin: 0 auto;
+
+}
+
+div {
+
+    border: solid red;
+    margin: 0 auto;
+    padding: 5em;
+
+}
+
+.title2 { 
+    
+    border: dotted blue;
+    color: blue;
+    margin: 0 auto;
+    padding: 1em;
+
+}

@@ -1,0 +1,51 @@
+body {
+
+    margin: 0 auto;
+    padding-left: 20em;
+    padding-right: 20em;
+    padding-top: 1em;
+
+}
+
+ul {
+
+    margin: 0 auto;
+    padding: 2em;
+
+}
+
+.ul0I { 
+
+    border: 3px dashed green;
+    display: block list-item;
+    padding: 1em;
+    margin: 1em;
+    list-style-type: disc;
+
+}
+
+.ul1 {
+
+    width: 50%;
+    margin-left: 0;
+
+}
+
+.ul1I { 
+
+    border: 3px dashed blue;
+    display: inline;
+    padding: 1em;
+    margin: 1em;
+    color: red;
+
+}
+
+.ul2I { 
+
+    border: 3px dashed red;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+
+}

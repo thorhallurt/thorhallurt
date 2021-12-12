@@ -1,0 +1,179 @@
+body {
+
+    background-image: linear-gradient(red, rgb(255, 50, 50), red, rgb(255, 75, 75), red, rgb(255, 50, 50), red);
+    
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+.volcano {
+
+    position: absolute;
+    z-index: 10;
+    margin-top: 50%;
+    margin-left: 28%;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+
+}
+
+.homepage {
+
+    width: 100%;
+    height: auto;
+    display: flex inline;
+    z-index: 1;
+    position: relative;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-rows: 1.5fr 3.5fr 13fr 4fr;
+    grid-template-columns: auto;
+    grid-template-areas: "h" "fm" "sm" "f";
+
+}
+
+header {
+
+    grid-area: h;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    position: relative;
+
+}
+
+.firstMain {
+
+    grid-area: fm;
+
+}
+
+.secondMain {
+
+    grid-area: sm;
+
+}
+
+footer {
+
+    grid-area: f;
+
+}
+
+.dllist { grid-area: d; }
+.relativelist { grid-area: r; }
+.absolutelist { grid-area: a; }
+
+@media only screen and (min-width: 37.5em) {
+
+    .firstMain {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .secondMain img {
+
+     width: 100%;
+     height: 200px;
+     object-fit: cover;   
+
+    }
+
+    .secondMain {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+    }
+
+    footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        grid-template-areas: "r a" "d d";
+
+    }
+
+    .container {
+
+        grid-template-rows: 1.5fr 1.5fr 3fr 2fr;
+
+    }
+
+    .volcano {
+
+        margin-left: 32%;
+        color: black;
+        font-size: 36px;
+
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+    .secondMain img {
+
+        height: 300px;
+
+    }
+
+    .secondMain {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    footer {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "r a d";
+
+    }
+
+    .container {
+
+        grid-template-rows: 1.5fr 1fr 1.8fr 0.8fr;
+
+    }
+
+    .volcano {
+
+        font-size: 48px;
+
+    }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+    .secondMain img {
+
+        height: 400px;
+
+    }
+
+    .volcano {
+
+        font-size: 72px;
+
+    }
+
+}

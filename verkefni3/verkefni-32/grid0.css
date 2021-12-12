@@ -1,0 +1,143 @@
+body {
+
+    display: grid inline;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: "t m" "t g" "b s" "b s" "a s" "a s" "a s" "a s" "l l" "l l" "f f";
+    grid-gap: 0px;
+
+}
+
+h4 {
+
+    margin: 1em;
+    font-size: larger;
+
+}
+
+.header {
+
+    grid-area: t;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid;
+    padding-left: 33%;
+
+}
+
+.github {
+
+    grid-area: m;
+    display: flex;
+    align-items: center;
+    padding-left: 33%;
+
+}
+
+.topnav {
+
+    grid-area: g;
+    display: flex;
+    padding-left: 33%;
+    border: 1px solid;
+    border-right: 1px transparent;
+
+}
+
+.art1 {
+
+    grid-area: s;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.art1 blockquote {
+
+    font-weight: 600;
+    align-self: center;
+
+}
+
+.art1 p {
+
+    align-self: center;
+
+}
+
+.art2 {
+
+    grid-area: a;
+    display: flex;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+
+}
+
+.art2 p {
+
+    margin: 1em;
+    font-weight:600;
+    font-size: medium;
+
+}
+
+.as1 {
+
+    grid-area: b;
+    display: flex;
+    border-top: 1px solid;
+    border-right: 1px solid;
+
+}
+
+.as1 p {
+
+    align-self: center;
+
+}
+
+.as1 .heimild {
+
+    float:right;
+    font-size: large;
+    margin: 2em;
+
+}
+
+.as2 {
+
+    grid-area: l;
+    display: flex;
+    border-bottom: 1px solid;
+    padding: 1em;
+
+}
+
+.as2 p {
+
+    align-self: center;
+
+}
+
+.as2 a {
+
+    float: right;
+    margin: 2em;
+    font-size: large;
+
+}
+
+.footer {
+
+    grid-area: f;
+    display: flex;
+
+}
+
+.footer * {
+
+    margin-left: 1em;
+    float: left;
+
+}

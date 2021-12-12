@@ -1,0 +1,70 @@
+body {
+
+    padding: 1em;
+
+}
+
+.box {
+
+    border: solid 1px;
+    float: left;
+    width: 69%;
+    height: fit-content;
+    display: inline;
+    margin: 0 auto;
+    padding: 2px;
+
+}
+
+.box1 {
+
+    border: solid 1px;
+    width: 30%;
+    height: 70%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 2px;
+
+}
+
+.group {
+
+    border: transparent 1px;
+    height: 70%;
+
+}
+
+.imgR {
+
+    float: right;
+
+}
+
+.bigL {
+
+    font-size: 48px;
+    float: left;
+    padding: 8px
+
+}
+
+.title {
+
+    float:right;
+    background-color: lightgray;
+
+}
+
+.group1 {
+
+    padding: 1px;
+    border: solid 1px;
+    display: inline-block;
+
+}
+
+.athugid {
+
+    background-color: yellow;
+
+}

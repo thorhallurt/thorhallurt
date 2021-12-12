@@ -1,0 +1,115 @@
+header {
+
+    display: grid inline;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "n n n n n n n m m g" "t t t t t t t t t t";
+    width: 100%;
+    border-bottom: 1px solid;
+
+}
+
+header .none {
+
+    display: flex none;
+    grid-area: n;
+
+}
+
+header .topnav {
+
+    display: flex;
+    grid-area: m;
+    align-items: center;
+
+}
+
+header .topnav .topmenu {
+
+    display: flex inline;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+header .topnav .topmenu li {
+
+    padding-left: 2em;
+
+}
+
+header a {
+
+    display: flex;
+    grid-area: g;
+    align-self: center;
+
+}
+
+header h1 {
+
+    display: flex;
+    grid-area: t;
+    align-self: center;
+    margin-left: 33%;
+
+}
+
+.main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr, 1fr, 1fr;
+    grid-template-areas: "a b" "c b" "d b";
+    border-bottom: 1px solid;
+
+}
+
+.main .art1 {
+
+    display: flex;
+    grid-area: a;
+
+}
+
+.main .art2 {
+
+    display: flex;
+    grid-area: b;
+    border-left: 1px solid;
+
+}
+
+.main .as1 {
+
+    display: flex;
+    grid-area: c;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+}
+
+.main .as2 {
+
+    display: flex;
+    grid-area: d;
+
+}
+
+h4 {
+
+    margin: 1em;
+
+}
+
+.main section {
+
+    padding: 1em;
+
+}
+
+.main .art1 .p {
+
+    margin-top: 5em;
+
+}
